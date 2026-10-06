@@ -30,7 +30,7 @@ def find_global_minimum_variance_portfolio(Sigma):
     n = Sigma.shape[0]
     ## TODO: YOUR CODE HERE. Replace the equal-weighted placeholder below.
     #wstar = np.ones(n) / n #placeholder
-    ones = np.ones(len(n))
+    ones = np.ones(n)
     wstar = np.linalg.solve(Sigma, ones)
     wstar = wstar / wstar.sum()
 
